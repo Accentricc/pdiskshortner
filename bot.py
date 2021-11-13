@@ -36,8 +36,8 @@ Here is your  [Short Link]({short_link})''', quote=True)
         await message.reply(f'Error: {e}', quote=True)
 
 
-async def get_shortlink(link):
-    url = 'http://pdiskshortner.net/api'
+async def 'get_shortlink(link):
+    url = 'https://playdisk.xyz/member/tools/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
