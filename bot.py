@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', 'deca8552d6bfa7f9e86bc34290214c116036d5de')
+API_KEY = environ.get('API_KEY', '8305ba44906cf58e4f5b85a0f4b5c98fffe4fcc5)
 
 bot = Client('pdiskshortner bot',
              api_id=API_ID,
@@ -19,7 +19,7 @@ bot = Client('pdiskshortner bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm Pdisk link bot. Just send me link and get short link")
+        "I'm Playdisk link bot. Just send me link and get short link")
 
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
